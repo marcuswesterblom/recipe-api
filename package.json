@@ -1,0 +1,39 @@
+{
+  "name": "recipe-api",
+  "version": "1.0.0",
+  "description": "An API where you can store recipes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsx watch src/index.mts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcuswesterblom/recipe-api.git"
+  },
+  "keywords": [
+    "API",
+    "Recipe",
+    "Mongo",
+    "DB",
+    "mongoose",
+    "Express"
+  ],
+  "author": "Marcus Westerblom",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/marcuswesterblom/recipe-api/issues"
+  },
+  "homepage": "https://github.com/marcuswesterblom/recipe-api#readme",
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "typescript": "^5.9.3"
+  }
+}
