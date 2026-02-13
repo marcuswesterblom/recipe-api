@@ -1,4 +1,5 @@
 import './style.css'
+import './scss/main.scss';
 import { ingredientManager } from './utils/ingredientManager';
 import { buildRecipeFromForm } from './utils/formData';
 import { createRecipe } from './services/api';

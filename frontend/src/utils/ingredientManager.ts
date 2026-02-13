@@ -21,6 +21,7 @@ export const ingredientManager = (containerId: string, addbtnId: string): HTMLEl
         const removeBtn = document.createElement("button");
         removeBtn.type = "button";
         removeBtn.textContent = "Remove";
+        removeBtn.id = "removeBtn";
         removeBtn.addEventListener("click", () => ingredientDiv.remove());
 
         ingredientDiv.append(

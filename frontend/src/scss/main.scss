@@ -1,0 +1,72 @@
+@use "./base/variables" as * ;
+@use "./base/mixins" as * ;
+
+body {
+    background-color: $bg-color;
+}
+legend {
+    color: $text-color;
+    text-transform: uppercase;
+    padding: $p10;
+    font-weight: 900;
+}
+h1 { 
+     color: $text-color;
+}
+fieldset {
+    @include flex;
+    flex-wrap: wrap;
+    padding: $p20;
+    gap: $g20;
+    border-radius: $border-radius;
+    border-color: $secondary-color;
+    background-color: $accent-color;
+    border-width: 1px;
+    border-style: solid;
+}
+#ingredientsFieldset {
+    display: block;
+    input{
+        margin: 10px;
+    } 
+}
+input {
+    height: 30px;
+    padding: $p5;
+    border: none;
+    border-radius: 5px;
+    color: $input-color;
+    font-weight: 600;
+    outline: none;
+    &::placeholder{
+        color: $input-color;
+        font-weight: 600;
+    }
+}
+button {
+    margin: 10px;
+    background-color: rgb(90, 194, 210);
+    color: rgb(36, 130, 151);
+    font-weight: 600;
+}
+#removeBtn {
+    background-color: transparent;
+    color: #a64040;
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover {
+        color: darken(#a64040, 10%);
+    
+    }
+}
+
+#categorySelect {
+    padding: $p20;
+    background-color: $secondary-color;
+    color: $text-color;
+    font-weight: 600;
+    border: 2px solid $text-color;
+    border-radius: $border-radius;
+    cursor: pointer;
+}
