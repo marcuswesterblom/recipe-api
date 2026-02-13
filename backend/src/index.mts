@@ -2,6 +2,7 @@ import { config } from "dotenv";
 import mongoose from "mongoose";
 import express, { json } from "express";
 import { recipeRouter } from "./routes/RecipeRouter.mjs";
+import cors from "cors";
 
 config();
 
@@ -12,6 +13,9 @@ if (!mongoUri) {
 }
 
 const app = express();
+app.use(cors({
+    origin: "http://localhost:5173"
+}));
 app.use(json());
 
 app.use("/api/recipes", recipeRouter);
